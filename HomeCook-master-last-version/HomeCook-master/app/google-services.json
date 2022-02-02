@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "213808969305",
+    "firebase_url": "https://homecook-38474-default-rtdb.firebaseio.com",
+    "project_id": "homecook-38474",
+    "storage_bucket": "homecook-38474.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:213808969305:android:f9d93ae8e0591923886348",
+        "android_client_info": {
+          "package_name": "com.example.homecook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "213808969305-aqtrac9scum949309cm1544e79fv4r9j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYFk9iIoTU4yj5Y8mXYMm8kLLj4IjBVxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "213808969305-aqtrac9scum949309cm1544e79fv4r9j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

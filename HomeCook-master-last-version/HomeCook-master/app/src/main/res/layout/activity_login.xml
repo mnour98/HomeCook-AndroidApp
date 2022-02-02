@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+android:background="@color/orange"
+    >
+
+
+    <ImageView
+        android:id="@+id/imgHomeCook"
+        android:layout_width="260dp"
+        android:layout_height="170dp"
+        app:srcCompat="@drawable/homec1image"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btnLog"
+        />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Username"
+
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/imgHomeCook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="10dp"
+
+       />
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@id/edUserName"
+        app:layout_constraintTop_toBottomOf="@id/edUserName"
+        android:layout_marginTop="20dp"
+
+        />
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Login"
+        android:textAllCaps="false"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
+        android:layout_marginTop="10dp"
+        />
+
+
+
+
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Register"
+        android:textAllCaps="false"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLog"
+        android:layout_marginTop="7dp"
+    />
+
+
+
+
+    <TextView
+        android:id="@+id/tvForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:text="Forgot Password?"
+        app:layout_constraintTop_toBottomOf="@id/btnReg"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@id/btnLog"
+        android:layout_marginTop="10dp"
+/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

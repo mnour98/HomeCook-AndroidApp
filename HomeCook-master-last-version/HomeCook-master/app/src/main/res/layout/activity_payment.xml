@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment"
+    android:background="@color/orange"
+    >
+
+
+    <TextView
+        android:id="@+id/tvEv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:text="Event Name"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        android:textSize="25sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/tvCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card Number"
+        app:layout_constraintTop_toBottomOf="@id/tvEv1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edCardNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCardNumber"
+        app:layout_constraintLeft_toRightOf="@id/tvCardNumber"
+        android:layout_marginLeft="22dp"
+        android:background="#F1F1F1"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tvCBC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CBC"
+        app:layout_constraintTop_toBottomOf="@id/tvCardNumber"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvCardNumber"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/edCBC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="number"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvCBC"
+        app:layout_constraintStart_toStartOf="@id/edCardNumber"
+        android:background="#F1F1F1"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quantity"
+        app:layout_constraintTop_toBottomOf="@id/tvCBC"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvCBC"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/edQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvQuantity"
+        app:layout_constraintStart_toStartOf="@id/edCardNumber"
+        android:background="#F1F1F1"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        app:layout_constraintTop_toBottomOf="@id/tvQuantity"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tvCBC"
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        />
+
+    <EditText
+        android:id="@+id/edComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/tvComment"
+        app:layout_constraintStart_toStartOf="@id/edCardNumber"
+        android:background="#F1F1F1"/>
+
+
+
+
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/edComment"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="35dp"
+        android:onClick="onClick"
+        />
+
+
+    <Button
+        android:id="@+id/btnRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Return"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="20dp"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/btnBuy"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:onClick="onClick"
+        />
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
